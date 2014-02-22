@@ -2,3 +2,8 @@
 
 <h2><%= @user.name %>'s Posts</h2>
 
+<% @user.posts.each do |post| %>
+  <div class="post">
+    <p><%= post.body %></p>
+  </div>
+<% end -%>
